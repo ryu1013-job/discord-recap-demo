@@ -40,14 +40,14 @@ const chartConfig = {
 
 export function MonthlyBarChart() {
   return (
-    <Card>
+    <Card className="h-full flex flex-col">
       <CardHeader>
         <CardTitle>
           Monthly Messages
         </CardTitle>
       </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig}>
+      <CardContent className="flex-1 flex items-center">
+        <ChartContainer config={chartConfig} className="w-full h-full">
           <BarChart accessibilityLayer data={chartData}>
             <XAxis
               dataKey="month"

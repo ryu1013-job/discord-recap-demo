@@ -22,7 +22,7 @@ export default function Rank({ rank, imageUrl, fallback = 'CN', className, round
     <div className={`relative w-fit ${styles.border} ${roundedClass} border-3 ${className || ''}`}>
       <div className={`absolute -top-3 right-1/2 translate-x-1/2 z-20 ${styles.badge} size-6 rounded-full flex items-center justify-center text-background`}>{rank}</div>
 
-      <Avatar className={`size-16 ${roundedClass}`}>
+      <Avatar className={`size-20 ${roundedClass}`}>
         <AvatarImage src={imageUrl} alt="user" />
         <AvatarFallback>{fallback}</AvatarFallback>
       </Avatar>

@@ -51,14 +51,14 @@ const chartConfig = {
 
 export function DayAreaChart() {
   return (
-    <Card>
+    <Card className="h-full flex flex-col">
       <CardHeader>
         <CardTitle>
           Daily Activity
         </CardTitle>
       </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig}>
+      <CardContent className="flex-1 flex items-center">
+        <ChartContainer config={chartConfig} className="w-full h-full">
           <AreaChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} strokeDasharray="3 3" />
             <XAxis
